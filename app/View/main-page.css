@@ -1,0 +1,31 @@
+ActionBar
+{
+    background-color: black;
+    color: green;
+    text-align: center;
+}
+
+ListView
+{
+    background-color: black;
+    color: green;
+    font-size: 18px;
+    height: 91%;
+    separatorColor: transparent;
+}
+
+ListView FlexboxLayout
+{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.footer
+{
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 9%;
+    color: green;
+    background-color: #171717;
+    font-size: 18px;
+}

@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Курс валют" />
+    <StackLayout>
+        <ListView items="{{ currencyRates }}" itemTap="{{ onCurrencyTap }}" separatorColor="transparent">
+            <ListView.itemTemplate>
+                <FlexboxLayout>
+                    <Label text="{{ name }}" />
+                    <Label text="{{ rate }}" />
+                </FlexboxLayout>
+            </ListView.itemTemplate>
+        </ListView>
+        <FlexboxLayout class="footer">
+            <Label text="{{ currencyRatesRelevanceDate }}" class="currencyRateRelevanceDate" />
+        </FlexboxLayout>
+    </StackLayout>
+</Page>
